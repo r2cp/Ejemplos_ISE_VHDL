@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab_FSM_semaforo/semaforo_tb_isim_beh.exe" -prj "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab_FSM_semaforo/semaforo_tb_beh.prj" "work.semaforo_tb" 

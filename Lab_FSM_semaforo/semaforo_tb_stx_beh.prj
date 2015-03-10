@@ -1,0 +1,2 @@
+vhdl isim_temp "semaforo_mod.vhd"
+vhdl isim_temp "semaforo_tb.vhd"

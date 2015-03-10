@@ -1,0 +1,10 @@
+Command line:
+   semaforo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3488
+
+Mon Mar 09 23:24:50 2015
+
+
+ Elaboration Time: 0.0156 sec
