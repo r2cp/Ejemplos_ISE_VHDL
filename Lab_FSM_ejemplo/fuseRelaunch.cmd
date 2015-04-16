@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_FSM_ejemplo/generador_tb_isim_beh.exe" -prj "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_FSM_ejemplo/generador_tb_beh.prj" "work.generador_tb" 

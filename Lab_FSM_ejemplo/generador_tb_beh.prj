@@ -1,0 +1,2 @@
+vhdl work "generador_mod.vhd"
+vhdl work "generador_tb.vhd"

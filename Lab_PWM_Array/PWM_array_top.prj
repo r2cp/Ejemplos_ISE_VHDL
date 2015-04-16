@@ -1,0 +1,3 @@
+vhdl work "pwm_pack.vhd"
+vhdl work "PWM_mod.vhd"
+vhdl work "PWM_array_top.vhd"

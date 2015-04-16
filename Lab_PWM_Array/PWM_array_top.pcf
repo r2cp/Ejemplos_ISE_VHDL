@@ -1,0 +1,51 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed Dec 10 00:06:06 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "pwm_out<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "pwm_out<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "pwm_out<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "duty_cycle<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "duty_cycle<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "duty_cycle<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "duty_cycle<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "duty_cycle<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "duty_cycle<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "duty_cycle<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "load<0>" LOCATE = SITE "D18" LEVEL 1;
+COMP "duty_cycle<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "load<1>" LOCATE = SITE "E18" LEVEL 1;
+COMP "load<2>" LOCATE = SITE "H13" LEVEL 1;
+COMP "rst" LOCATE = SITE "B18" LEVEL 1;
+COMP "led_status" LOCATE = SITE "R4" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "for_pwm[2].PWM/comp_val_7" BEL "for_pwm[2].PWM/comp_val_6"
+        BEL "for_pwm[2].PWM/comp_val_5" BEL "for_pwm[2].PWM/comp_val_4" BEL
+        "for_pwm[2].PWM/comp_val_3" BEL "for_pwm[2].PWM/comp_val_2" BEL
+        "for_pwm[2].PWM/comp_val_1" BEL "for_pwm[2].PWM/comp_val_0" BEL
+        "for_pwm[1].PWM/comp_val_7" BEL "for_pwm[1].PWM/comp_val_6" BEL
+        "for_pwm[1].PWM/comp_val_5" BEL "for_pwm[1].PWM/comp_val_4" BEL
+        "for_pwm[1].PWM/comp_val_3" BEL "for_pwm[1].PWM/comp_val_2" BEL
+        "for_pwm[1].PWM/comp_val_1" BEL "for_pwm[1].PWM/comp_val_0" BEL
+        "for_pwm[0].PWM/comp_val_7" BEL "for_pwm[0].PWM/comp_val_6" BEL
+        "for_pwm[0].PWM/comp_val_5" BEL "for_pwm[0].PWM/comp_val_4" BEL
+        "for_pwm[0].PWM/comp_val_3" BEL "for_pwm[0].PWM/comp_val_2" BEL
+        "for_pwm[0].PWM/comp_val_1" BEL "for_pwm[0].PWM/comp_val_0" BEL
+        "for_pwm[2].PWM/cnt_0" BEL "for_pwm[2].PWM/cnt_1" BEL
+        "for_pwm[2].PWM/cnt_2" BEL "for_pwm[2].PWM/cnt_3" BEL
+        "for_pwm[2].PWM/cnt_4" BEL "for_pwm[2].PWM/cnt_5" BEL
+        "for_pwm[2].PWM/cnt_6" BEL "for_pwm[2].PWM/cnt_7" BEL
+        "for_pwm[0].PWM/cnt_0" BEL "for_pwm[0].PWM/cnt_1" BEL
+        "for_pwm[0].PWM/cnt_2" BEL "for_pwm[0].PWM/cnt_3" BEL
+        "for_pwm[0].PWM/cnt_4" BEL "for_pwm[0].PWM/cnt_5" BEL
+        "for_pwm[0].PWM/cnt_6" BEL "for_pwm[0].PWM/cnt_7" BEL
+        "for_pwm[1].PWM/cnt_0" BEL "for_pwm[1].PWM/cnt_1" BEL
+        "for_pwm[1].PWM/cnt_2" BEL "for_pwm[1].PWM/cnt_3" BEL
+        "for_pwm[1].PWM/cnt_4" BEL "for_pwm[1].PWM/cnt_5" BEL
+        "for_pwm[1].PWM/cnt_6" BEL "for_pwm[1].PWM/cnt_7" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

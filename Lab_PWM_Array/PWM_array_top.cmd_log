@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500_Basic.ucf -p xc3s500e-fg320-5 PWM_array_top.ngc PWM_array_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PWM_array_top_map.ncd PWM_array_top.ngd PWM_array_top.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_array_top_map.ncd PWM_array_top.ncd PWM_array_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PWM_array_top.twx PWM_array_top.ncd -o PWM_array_top.twr PWM_array_top.pcf -ucf Nexys2_500_Basic.ucf 
+bitgen -intstyle ise -f PWM_array_top.ut PWM_array_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500_Basic.ucf -p xc3s500e-fg320-5 PWM_array_top.ngc PWM_array_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PWM_array_top_map.ncd PWM_array_top.ngd PWM_array_top.pcf 
+par -w -intstyle ise -ol high -t 1 PWM_array_top_map.ncd PWM_array_top.ncd PWM_array_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PWM_array_top.twx PWM_array_top.ncd -o PWM_array_top.twr PWM_array_top.pcf -ucf Nexys2_500_Basic.ucf 
+bitgen -intstyle ise -f PWM_array_top.ut PWM_array_top.ncd 

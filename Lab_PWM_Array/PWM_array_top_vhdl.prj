@@ -1,0 +1,3 @@
+vhdl work "C:\Users\Rodrigo\Documents\Curso_ICTP\Lab4_PWM_Array\pwm_pack.vhd"
+vhdl work "C:\Users\Rodrigo\Documents\Curso_ICTP\Lab4_PWM_Array\PWM_mod.vhd"
+vhdl work "C:\Users\Rodrigo\Documents\Curso_ICTP\Lab4_PWM_Array\PWM_array_top.vhd"

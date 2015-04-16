@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_FSM_ejemplo/generador_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="generador_tb" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/generador_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generador_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generador_tb/z" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z[1:0]</obj_property>
+      <obj_property name="ObjectShortName">z[1:0]</obj_property>
+   </wvobject>
+</wave_config>

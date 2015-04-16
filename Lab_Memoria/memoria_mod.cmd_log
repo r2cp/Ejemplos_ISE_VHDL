@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.syr" 

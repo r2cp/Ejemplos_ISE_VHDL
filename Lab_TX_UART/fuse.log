@@ -1,0 +1,19 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_tb_isim_beh.exe" -prj "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_tb_beh.prj" "work.tx_uart_tb" 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_mod.vhd" into library work
+Parsing VHDL file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity tx_uart_mod [\tx_uart_mod(8)\]
+Compiling architecture behavior of entity tx_uart_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_tb_isim_beh.exe
+Fuse Memory Usage: 28968 KB
+Fuse CPU Usage: 482 ms

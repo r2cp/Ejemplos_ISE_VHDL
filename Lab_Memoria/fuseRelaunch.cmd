@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/bllk_mem_tb_isim_beh.exe" -prj "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/bllk_mem_tb_beh.prj" "work.bllk_mem_tb" 

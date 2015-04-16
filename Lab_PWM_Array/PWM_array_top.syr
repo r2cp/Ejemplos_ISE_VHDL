@@ -1,0 +1,403 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: PWM_array_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PWM_array_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PWM_array_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : PWM_array_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/pwm_pack.vhd" in Library work.
+Package <pwm_pack> compiled.
+Package body <pwm_pack> compiled.
+Compiling vhdl file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_mod.vhd" in Library work.
+Architecture behavioral of Entity pwm_mod is up to date.
+Compiling vhdl file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.vhd" in Library work.
+Entity <pwm_array_top> compiled.
+Entity <pwm_array_top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PWM_array_top> in library <work> (architecture <behavioral>) with generics.
+	bus_width = 8
+
+Analyzing hierarchy for entity <PWM_mod> in library <work> (architecture <behavioral>) with generics.
+	bus_width = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <PWM_array_top> in library <work> (Architecture <behavioral>).
+	bus_width = 8
+Entity <PWM_array_top> analyzed. Unit <PWM_array_top> generated.
+
+Analyzing generic Entity <PWM_mod> in library <work> (Architecture <behavioral>).
+	bus_width = 8
+Entity <PWM_mod> analyzed. Unit <PWM_mod> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PWM_mod>.
+    Related source file is "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_mod.vhd".
+    Found 8-bit up counter for signal <cnt>.
+    Found 8-bit register for signal <comp_val>.
+    Found 8-bit comparator less for signal <pwm_out$cmp_lt0000> created at line 60.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <PWM_mod> synthesized.
+
+
+Synthesizing Unit <PWM_array_top>.
+    Related source file is "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.vhd".
+Unit <PWM_array_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 8-bit up counter                                      : 3
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Comparators                                          : 3
+ 8-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 8-bit up counter                                      : 3
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 3
+ 8-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PWM_array_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PWM_array_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PWM_array_top.ngr
+Top Level Output File Name         : PWM_array_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 125
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 21
+#      LUT2                        : 27
+#      MUXCY                       : 45
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 48
+#      FDCE                        : 24
+#      FDE                         : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 12
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       38  out of   4656     0%  
+ Number of Slice Flip Flops:             48  out of   9312     0%  
+ Number of 4 input LUTs:                 54  out of   9312     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 48    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 24    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.286ns (Maximum Frequency: 304.280MHz)
+   Minimum input arrival time before clock: 4.068ns
+   Maximum output required time after clock: 6.296ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.286ns (frequency: 304.280MHz)
+  Total number of paths / destination ports: 108 / 24
+-------------------------------------------------------------------------
+Delay:               3.286ns (Levels of Logic = 8)
+  Source:            for_pwm[2].PWM/cnt_1 (FF)
+  Destination:       for_pwm[2].PWM/cnt_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: for_pwm[2].PWM/cnt_1 to for_pwm[2].PWM/cnt_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.514   0.532  for_pwm[2].PWM/cnt_1 (for_pwm[2].PWM/cnt_1)
+     LUT1:I0->O            1   0.612   0.000  for_pwm[2].PWM/Mcount_cnt_cy<1>_rt (for_pwm[2].PWM/Mcount_cnt_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  for_pwm[2].PWM/Mcount_cnt_cy<1> (for_pwm[2].PWM/Mcount_cnt_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcount_cnt_cy<2> (for_pwm[2].PWM/Mcount_cnt_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcount_cnt_cy<3> (for_pwm[2].PWM/Mcount_cnt_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcount_cnt_cy<4> (for_pwm[2].PWM/Mcount_cnt_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcount_cnt_cy<5> (for_pwm[2].PWM/Mcount_cnt_cy<5>)
+     MUXCY:CI->O           0   0.051   0.000  for_pwm[2].PWM/Mcount_cnt_cy<6> (for_pwm[2].PWM/Mcount_cnt_cy<6>)
+     XORCY:CI->O           1   0.699   0.000  for_pwm[2].PWM/Mcount_cnt_xor<7> (Result<7>)
+     FDCE:D                    0.268          for_pwm[2].PWM/cnt_7
+    ----------------------------------------
+    Total                      3.286ns (2.755ns logic, 0.532ns route)
+                                       (83.8% logic, 16.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 96 / 72
+-------------------------------------------------------------------------
+Offset:              4.068ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       for_pwm[2].PWM/comp_val_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to for_pwm[2].PWM/comp_val_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.224  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            8   0.612   0.643  for_pwm[2].PWM/comp_val_and00001 (for_pwm[2].PWM/comp_val_and0000)
+     FDE:CE                    0.483          for_pwm[2].PWM/comp_val_0
+    ----------------------------------------
+    Total                      4.068ns (2.201ns logic, 1.867ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 72 / 3
+-------------------------------------------------------------------------
+Offset:              6.296ns (Levels of Logic = 10)
+  Source:            for_pwm[2].PWM/cnt_0 (FF)
+  Destination:       pwm_out<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: for_pwm[2].PWM/cnt_0 to pwm_out<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.514   0.532  for_pwm[2].PWM/cnt_0 (for_pwm[2].PWM/cnt_0)
+     LUT2:I0->O            1   0.612   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_lut<0> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<0> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<1> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<2> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<3> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<4> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<5> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<6> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.399   0.357  for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<7> (for_pwm[2].PWM/Mcompar_pwm_out_cmp_lt0000_cy<7>)
+     OBUF:I->O                 3.169          pwm_out_2_OBUF (pwm_out<2>)
+    ----------------------------------------
+    Total                      6.296ns (5.408ns logic, 0.889ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.58 secs
+ 
+--> 
+
+Total memory usage is 253752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

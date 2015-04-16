@@ -1,0 +1,61 @@
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 divisorFrecuencia_mod.ngc divisorFrecuencia_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ngd divisorFrecuencia_mod.pcf 
+par -w -intstyle ise -ol high -t 1 divisorFrecuencia_mod_map.ncd divisorFrecuencia_mod.ncd divisorFrecuencia_mod.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml divisorFrecuencia_mod.twx divisorFrecuencia_mod.ncd -o divisorFrecuencia_mod.twr divisorFrecuencia_mod.pcf 
+xst -intstyle ise -ifn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.xst" -ofn "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_mod.syr" 

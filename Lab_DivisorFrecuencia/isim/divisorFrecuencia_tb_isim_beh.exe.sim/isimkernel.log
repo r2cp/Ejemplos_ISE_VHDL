@@ -1,0 +1,29 @@
+Command line:
+   divisorFrecuencia_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1672
+
+Tue Dec 09 13:43:44 2014
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 506.057 Meg
+
+ Total Signals          : 8
+ Total Nets             : 5
+ Total Signal Drivers   : 5
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 367
+Total Line Count : 19
+
+ Total Simulation Time: 0.156 sec
+
+ Current Memory Usage: 506.057 Meg
+
+Tue Dec 09 13:48:55 2014
+

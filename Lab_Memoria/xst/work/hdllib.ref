@@ -1,0 +1,4 @@
+EN memoria_mod NULL C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.vhd sub00/vhpl00 1426714396
+AR blk_mem_gen_v7_3 blk_mem_gen_v7_3_a C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/ipcore_dir/blk_mem_gen_v7_3.vhd sub00/vhpl03 1418264830
+AR memoria_mod behavioral C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/memoria_mod.vhd sub00/vhpl01 1426714397
+EN blk_mem_gen_v7_3 NULL C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/ipcore_dir/blk_mem_gen_v7_3.vhd sub00/vhpl02 1418264829

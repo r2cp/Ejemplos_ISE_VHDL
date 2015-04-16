@@ -1,0 +1,6 @@
+EN pwm_array_top NULL C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.vhd sub00/vhpl02 1418191549
+EN pwm_mod NULL C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_mod.vhd sub00/vhpl00 1418191547
+PH pwm_pack NULL C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/pwm_pack.vhd sub00/vhpl04 1418191545
+AR pwm_array_top behavioral C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_array_top.vhd sub00/vhpl03 1418191550
+AR pwm_mod behavioral C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/PWM_mod.vhd sub00/vhpl01 1418191548
+PB pwm_pack pwm_pack C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_PWM_Array/pwm_pack.vhd sub00/vhpl05 1418191546

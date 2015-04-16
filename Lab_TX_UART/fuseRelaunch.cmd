@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_tb_isim_beh.exe" -prj "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_TX_UART/tx_uart_tb_beh.prj" "work.tx_uart_tb" 

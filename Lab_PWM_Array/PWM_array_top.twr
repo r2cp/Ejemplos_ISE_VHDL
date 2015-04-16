@@ -1,0 +1,532 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml PWM_array_top.twx PWM_array_top.ncd -o PWM_array_top.twr
+PWM_array_top.pcf -ucf Nexys2_500_Basic.ucf
+
+Design file:              PWM_array_top.ncd
+Physical constraint file: PWM_array_top.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 108 paths analyzed, 54 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.083ns.
+--------------------------------------------------------------------------------
+
+Paths for end point for_pwm[1].PWM/cnt_7 (SLICE_X67Y63.CIN), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     16.917ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[1].PWM/cnt_0 (FF)
+  Destination:          for_pwm[1].PWM/cnt_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.081ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.002ns (0.050 - 0.052)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[1].PWM/cnt_0 to for_pwm[1].PWM/cnt_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y60.XQ      Tcko                  0.514   for_pwm[1].PWM/cnt<0>
+                                                       for_pwm[1].PWM/cnt_0
+    SLICE_X67Y60.F1      net (fanout=2)        0.478   for_pwm[1].PWM/cnt<0>
+    SLICE_X67Y60.COUT    Topcyf                1.011   for_pwm[1].PWM/cnt<0>
+                                                       for_pwm[1].PWM/Mcount_cnt_lut<0>_INV_0
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<0>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y61.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y61.COUT    Tbyp                  0.103   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.COUT    Tbyp                  0.103   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y63.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y63.CLK     Tcinck                0.872   for_pwm[1].PWM/cnt<6>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<6>
+                                                       for_pwm[1].PWM/Mcount_cnt_xor<7>
+                                                       for_pwm[1].PWM/cnt_7
+    -------------------------------------------------  ---------------------------
+    Total                                      3.081ns (2.603ns logic, 0.478ns route)
+                                                       (84.5% logic, 15.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     17.051ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[1].PWM/cnt_2 (FF)
+  Destination:          for_pwm[1].PWM/cnt_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      2.947ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.002ns (0.050 - 0.052)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[1].PWM/cnt_2 to for_pwm[1].PWM/cnt_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y61.XQ      Tcko                  0.514   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/cnt_2
+    SLICE_X67Y61.F2      net (fanout=2)        0.447   for_pwm[1].PWM/cnt<2>
+    SLICE_X67Y61.COUT    Topcyf                1.011   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/cnt<2>_rt
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.COUT    Tbyp                  0.103   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y63.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y63.CLK     Tcinck                0.872   for_pwm[1].PWM/cnt<6>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<6>
+                                                       for_pwm[1].PWM/Mcount_cnt_xor<7>
+                                                       for_pwm[1].PWM/cnt_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.947ns (2.500ns logic, 0.447ns route)
+                                                       (84.8% logic, 15.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     17.125ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[1].PWM/cnt_4 (FF)
+  Destination:          for_pwm[1].PWM/cnt_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      2.875ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[1].PWM/cnt_4 to for_pwm[1].PWM/cnt_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y62.XQ      Tcko                  0.514   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/cnt_4
+    SLICE_X67Y62.F1      net (fanout=2)        0.478   for_pwm[1].PWM/cnt<4>
+    SLICE_X67Y62.COUT    Topcyf                1.011   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/cnt<4>_rt
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y63.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y63.CLK     Tcinck                0.872   for_pwm[1].PWM/cnt<6>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<6>
+                                                       for_pwm[1].PWM/Mcount_cnt_xor<7>
+                                                       for_pwm[1].PWM/cnt_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.875ns (2.397ns logic, 0.478ns route)
+                                                       (83.4% logic, 16.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point for_pwm[0].PWM/cnt_7 (SLICE_X67Y59.CIN), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     16.919ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[0].PWM/cnt_0 (FF)
+  Destination:          for_pwm[0].PWM/cnt_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.077ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.004ns (0.004 - 0.008)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[0].PWM/cnt_0 to for_pwm[0].PWM/cnt_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y56.XQ      Tcko                  0.514   for_pwm[0].PWM/cnt<0>
+                                                       for_pwm[0].PWM/cnt_0
+    SLICE_X67Y56.F1      net (fanout=2)        0.474   for_pwm[0].PWM/cnt<0>
+    SLICE_X67Y56.COUT    Topcyf                1.011   for_pwm[0].PWM/cnt<0>
+                                                       for_pwm[0].PWM/Mcount_cnt_lut<0>_INV_0
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<0>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y57.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y57.COUT    Tbyp                  0.103   for_pwm[0].PWM/cnt<2>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y58.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y58.COUT    Tbyp                  0.103   for_pwm[0].PWM/cnt<4>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y59.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y59.CLK     Tcinck                0.872   for_pwm[0].PWM/cnt<6>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<6>
+                                                       for_pwm[0].PWM/Mcount_cnt_xor<7>
+                                                       for_pwm[0].PWM/cnt_7
+    -------------------------------------------------  ---------------------------
+    Total                                      3.077ns (2.603ns logic, 0.474ns route)
+                                                       (84.6% logic, 15.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.994ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[0].PWM/cnt_1 (FF)
+  Destination:          for_pwm[0].PWM/cnt_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.002ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.004ns (0.004 - 0.008)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[0].PWM/cnt_1 to for_pwm[0].PWM/cnt_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y56.YQ      Tcko                  0.511   for_pwm[0].PWM/cnt<0>
+                                                       for_pwm[0].PWM/cnt_1
+    SLICE_X67Y56.G3      net (fanout=2)        0.542   for_pwm[0].PWM/cnt<1>
+    SLICE_X67Y56.COUT    Topcyg                0.871   for_pwm[0].PWM/cnt<0>
+                                                       for_pwm[0].PWM/cnt<1>_rt
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y57.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y57.COUT    Tbyp                  0.103   for_pwm[0].PWM/cnt<2>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y58.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y58.COUT    Tbyp                  0.103   for_pwm[0].PWM/cnt<4>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y59.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y59.CLK     Tcinck                0.872   for_pwm[0].PWM/cnt<6>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<6>
+                                                       for_pwm[0].PWM/Mcount_cnt_xor<7>
+                                                       for_pwm[0].PWM/cnt_7
+    -------------------------------------------------  ---------------------------
+    Total                                      3.002ns (2.460ns logic, 0.542ns route)
+                                                       (81.9% logic, 18.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     17.110ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[0].PWM/cnt_2 (FF)
+  Destination:          for_pwm[0].PWM/cnt_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      2.886ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.004ns (0.004 - 0.008)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[0].PWM/cnt_2 to for_pwm[0].PWM/cnt_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y57.XQ      Tcko                  0.514   for_pwm[0].PWM/cnt<2>
+                                                       for_pwm[0].PWM/cnt_2
+    SLICE_X67Y57.F3      net (fanout=2)        0.386   for_pwm[0].PWM/cnt<2>
+    SLICE_X67Y57.COUT    Topcyf                1.011   for_pwm[0].PWM/cnt<2>
+                                                       for_pwm[0].PWM/cnt<2>_rt
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y58.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y58.COUT    Tbyp                  0.103   for_pwm[0].PWM/cnt<4>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y59.CIN     net (fanout=1)        0.000   for_pwm[0].PWM/Mcount_cnt_cy<5>
+    SLICE_X67Y59.CLK     Tcinck                0.872   for_pwm[0].PWM/cnt<6>
+                                                       for_pwm[0].PWM/Mcount_cnt_cy<6>
+                                                       for_pwm[0].PWM/Mcount_cnt_xor<7>
+                                                       for_pwm[0].PWM/cnt_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.886ns (2.500ns logic, 0.386ns route)
+                                                       (86.6% logic, 13.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point for_pwm[1].PWM/cnt_5 (SLICE_X67Y62.CIN), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     17.020ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[1].PWM/cnt_0 (FF)
+  Destination:          for_pwm[1].PWM/cnt_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      2.978ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.002ns (0.050 - 0.052)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[1].PWM/cnt_0 to for_pwm[1].PWM/cnt_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y60.XQ      Tcko                  0.514   for_pwm[1].PWM/cnt<0>
+                                                       for_pwm[1].PWM/cnt_0
+    SLICE_X67Y60.F1      net (fanout=2)        0.478   for_pwm[1].PWM/cnt<0>
+    SLICE_X67Y60.COUT    Topcyf                1.011   for_pwm[1].PWM/cnt<0>
+                                                       for_pwm[1].PWM/Mcount_cnt_lut<0>_INV_0
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<0>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y61.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y61.COUT    Tbyp                  0.103   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CLK     Tcinck                0.872   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_xor<5>
+                                                       for_pwm[1].PWM/cnt_5
+    -------------------------------------------------  ---------------------------
+    Total                                      2.978ns (2.500ns logic, 0.478ns route)
+                                                       (83.9% logic, 16.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     17.154ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[1].PWM/cnt_2 (FF)
+  Destination:          for_pwm[1].PWM/cnt_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      2.844ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.002ns (0.050 - 0.052)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[1].PWM/cnt_2 to for_pwm[1].PWM/cnt_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y61.XQ      Tcko                  0.514   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/cnt_2
+    SLICE_X67Y61.F2      net (fanout=2)        0.447   for_pwm[1].PWM/cnt<2>
+    SLICE_X67Y61.COUT    Topcyf                1.011   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/cnt<2>_rt
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CLK     Tcinck                0.872   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_xor<5>
+                                                       for_pwm[1].PWM/cnt_5
+    -------------------------------------------------  ---------------------------
+    Total                                      2.844ns (2.397ns logic, 0.447ns route)
+                                                       (84.3% logic, 15.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     17.274ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               for_pwm[1].PWM/cnt_1 (FF)
+  Destination:          for_pwm[1].PWM/cnt_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      2.724ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.002ns (0.050 - 0.052)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: for_pwm[1].PWM/cnt_1 to for_pwm[1].PWM/cnt_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y60.YQ      Tcko                  0.511   for_pwm[1].PWM/cnt<0>
+                                                       for_pwm[1].PWM/cnt_1
+    SLICE_X67Y60.G4      net (fanout=2)        0.367   for_pwm[1].PWM/cnt<1>
+    SLICE_X67Y60.COUT    Topcyg                0.871   for_pwm[1].PWM/cnt<0>
+                                                       for_pwm[1].PWM/cnt<1>_rt
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y61.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<1>
+    SLICE_X67Y61.COUT    Tbyp                  0.103   for_pwm[1].PWM/cnt<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<2>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CIN     net (fanout=1)        0.000   for_pwm[1].PWM/Mcount_cnt_cy<3>
+    SLICE_X67Y62.CLK     Tcinck                0.872   for_pwm[1].PWM/cnt<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_cy<4>
+                                                       for_pwm[1].PWM/Mcount_cnt_xor<5>
+                                                       for_pwm[1].PWM/cnt_5
+    -------------------------------------------------  ---------------------------
+    Total                                      2.724ns (2.357ns logic, 0.367ns route)
+                                                       (86.5% logic, 13.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point for_pwm[2].PWM/cnt_0 (SLICE_X67Y48.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.397ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               for_pwm[2].PWM/cnt_0 (FF)
+  Destination:          for_pwm[2].PWM/cnt_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.397ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: for_pwm[2].PWM/cnt_0 to for_pwm[2].PWM/cnt_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y48.XQ      Tcko                  0.411   for_pwm[2].PWM/cnt<0>
+                                                       for_pwm[2].PWM/cnt_0
+    SLICE_X67Y48.F4      net (fanout=2)        0.290   for_pwm[2].PWM/cnt<0>
+    SLICE_X67Y48.CLK     Tckf        (-Th)    -0.696   for_pwm[2].PWM/cnt<0>
+                                                       for_pwm[2].PWM/Mcount_cnt_lut<0>_INV_0
+                                                       for_pwm[2].PWM/Mcount_cnt_xor<0>
+                                                       for_pwm[2].PWM/cnt_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.397ns (1.107ns logic, 0.290ns route)
+                                                       (79.2% logic, 20.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point for_pwm[0].PWM/cnt_2 (SLICE_X67Y57.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.416ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               for_pwm[0].PWM/cnt_2 (FF)
+  Destination:          for_pwm[0].PWM/cnt_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.416ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: for_pwm[0].PWM/cnt_2 to for_pwm[0].PWM/cnt_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y57.XQ      Tcko                  0.411   for_pwm[0].PWM/cnt<2>
+                                                       for_pwm[0].PWM/cnt_2
+    SLICE_X67Y57.F3      net (fanout=2)        0.309   for_pwm[0].PWM/cnt<2>
+    SLICE_X67Y57.CLK     Tckf        (-Th)    -0.696   for_pwm[0].PWM/cnt<2>
+                                                       for_pwm[0].PWM/cnt<2>_rt
+                                                       for_pwm[0].PWM/Mcount_cnt_xor<2>
+                                                       for_pwm[0].PWM/cnt_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.416ns (1.107ns logic, 0.309ns route)
+                                                       (78.2% logic, 21.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point for_pwm[2].PWM/cnt_2 (SLICE_X67Y49.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.417ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               for_pwm[2].PWM/cnt_2 (FF)
+  Destination:          for_pwm[2].PWM/cnt_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.417ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: for_pwm[2].PWM/cnt_2 to for_pwm[2].PWM/cnt_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X67Y49.XQ      Tcko                  0.411   for_pwm[2].PWM/cnt<2>
+                                                       for_pwm[2].PWM/cnt_2
+    SLICE_X67Y49.F3      net (fanout=2)        0.310   for_pwm[2].PWM/cnt<2>
+    SLICE_X67Y49.CLK     Tckf        (-Th)    -0.696   for_pwm[2].PWM/cnt<2>
+                                                       for_pwm[2].PWM/cnt<2>_rt
+                                                       for_pwm[2].PWM/Mcount_cnt_xor<2>
+                                                       for_pwm[2].PWM/cnt_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.417ns (1.107ns logic, 0.310ns route)
+                                                       (78.1% logic, 21.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 17.224ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.388ns (Trpw)
+  Physical resource: for_pwm[1].PWM/cnt<0>/SR
+  Logical resource: for_pwm[1].PWM/cnt_0/SR
+  Location pin: SLICE_X67Y60.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 17.224ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.388ns (Trpw)
+  Physical resource: for_pwm[1].PWM/cnt<0>/SR
+  Logical resource: for_pwm[1].PWM/cnt_0/SR
+  Location pin: SLICE_X67Y60.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 17.224ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.388ns (Trpw)
+  Physical resource: for_pwm[1].PWM/cnt<0>/SR
+  Logical resource: for_pwm[1].PWM/cnt_1/SR
+  Location pin: SLICE_X67Y60.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.083|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 108 paths, 0 nets, and 46 connections
+
+Design statistics:
+   Minimum period:   3.083ns{1}   (Maximum frequency: 324.359MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Dec 10 00:06:22 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 164 MB
+
+
+

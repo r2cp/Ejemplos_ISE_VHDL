@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_tb_isim_beh.exe" -prj "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab4_DivisorFrecuencia/divisorFrecuencia_tb_beh.prj" "work.divisorFrecuencia_tb" 

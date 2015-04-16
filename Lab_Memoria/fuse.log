@@ -1,0 +1,10 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/bllk_mem_tb_isim_beh.exe -prj C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/bllk_mem_tb_beh.prj work.bllk_mem_tb 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/ipcore_dir/blk_mem_gen_v7_3.vhd" into library work
+Parsing VHDL file "C:/Users/Rodrigo/Documents/Curso_ICTP/Lab5_Memoria/bllk_mem_tb.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1030 - "N:/P.58f/rtf/vhdl/src/XilinxCoreLib/BLK_MEM_GEN_V7_3.vhd" Line 2797: Cannot open file 'blk_mem_gen_v7_3.mif'.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit bllk_mem_tb in library work failed

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Rodrigo\Documents\Curso_ICTP\Lab4_PWM_Array\PWM_array_top.ncd
+OUTFILE=C:\Users\Rodrigo\Documents\Curso_ICTP\Lab4_PWM_Array\PWM_array_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Rodrigo\Documents\Curso_ICTP\Lab4_PWM_Array
+LICENSE=WebPack
+USER_INFO=210933206_0_0_727
